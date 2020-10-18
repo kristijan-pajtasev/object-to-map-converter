@@ -1,8 +1,16 @@
 {
   "name": "convert-to-map",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Converter from JavaScript Object to JavaScript Map",
-  "keywords": ["javascript", "convert", "converter", "script", "object-to-map", "Object", "Map"],
+  "keywords": [
+    "javascript",
+    "convert",
+    "converter",
+    "script",
+    "object-to-map",
+    "Object",
+    "Map"
+  ],
   "main": "src/index.js",
   "scripts": {
     "test": "node src/test.js"
@@ -11,6 +19,8 @@
     "type": "git",
     "url": "https://github.com/kristijan-pajtasev/object-to-map-converter.git"
   },
-  "author": "",
+  "author": {
+    "name": "Kristijan Pajtasev"
+  },
   "license": "MIT"
 }
