@@ -5,7 +5,7 @@ const isObject = (value) => {
 const valueToMap = value => {
     console.log(value)
     if (!isObject(value) && !Array.isArray(value)) return value;
-    if(Array.isArray(value)) {
+    if (Array.isArray(value)) {
         console.log(value)
         return value.map(element => valueToMap(element))
     }
@@ -25,41 +25,5 @@ const convertToMap = value => {
     if (!isObject(value)) throw new Error("Value needs to be Object");
     return valueToMap(value)
 }
-
-const val = {
-    first_name: "john",
-    last_name: "doe",
-    dob: new Date(),
-    address: {
-        line_1: "synge street",
-    },
-    employment: [
-        {
-            from: new Date(),
-            company: "SP",
-            address: {
-                line_1: "synge street",
-            }
-        },
-        {
-            from: new Date(),
-            company: "SP",
-            address: {
-                line_1: "synge street",
-            }
-        },
-        {
-            from: new Date(),
-            company: {
-                name: "sp",
-                field: "tech"
-            },
-            address: {
-                line_1: "synge street",
-            }
-        }
-    ]
-}
-console.log(convertToMap(val))
 
 module.exports = convertToMap;
