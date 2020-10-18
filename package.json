@@ -1,6 +1,6 @@
 {
   "name": "convert-to-map",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Converter from JavaScript Object to JavaScript Map",
   "keywords": [
     "javascript",
